@@ -11,10 +11,9 @@ $ yarn start
 ## 📌 Toggle
 
 
-
 ### ✔️실행방법
 
-![Toggle.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6a0b0eff-92b0-428a-9e33-3479690e0759/Toggle.gif)
+![Toggle](https://user-images.githubusercontent.com/81206124/153207356-689e5696-c8fd-4db7-ad36-933c2d6608dc.gif)
 
 토글 스위치를 클릭하면 색이 바뀌면서 ON/OFF 됩니다.
 
@@ -33,7 +32,8 @@ $ yarn start
 
 ### ✔️실행방법
 
-![Modal.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/563b2881-3d92-4d87-9467-f47f1371cd70/Modal.gif)
+![Modal](https://user-images.githubusercontent.com/81206124/153207379-29a117d1-3ad0-47c9-8788-a9229599de2b.gif)
+
 
 Open Modal을 클릭하면 모달 창이 열립니다. x버튼과 모달 창 바깥쪽 어두운 부분을 클릭하여 모달 창을 닫을 수 있습니다.
 
@@ -57,7 +57,7 @@ Open Modal을 클릭하면 모달 창이 열립니다. x버튼과 모달 창 바
 
 ### ✔️실행방법
 
-![Tab.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1da0a688-4b17-4748-ad56-3feeb22b804f/Tab.gif)
+![Tab](https://user-images.githubusercontent.com/81206124/153207399-725cf1fa-567a-4509-9984-b9ebbde36564.gif)
 
 원하는 탭을 클릭하면 해당 탭의 뷰로 전환할 수 있습니다.
 
@@ -75,8 +75,8 @@ Open Modal을 클릭하면 모달 창이 열립니다. x버튼과 모달 창 바
 
 
 ### ✔️실행방법
+![Tag](https://user-images.githubusercontent.com/81206124/153207416-9d166767-2364-48d1-8307-0553041a1ff0.gif)
 
-![Tag.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6050141e-2c3b-47e4-bcd1-74df333a55e5/Tag.gif)
 
 Input 창에 단어를 입력하면 tag가 만들어지고, 빈값이나 이미 존재하는 값을 입력하면 입력이 되지 않습니다. x버튼을 누르면 삭제가 가능합니다.
 
@@ -102,7 +102,7 @@ enter를 클릭하여 tag를 추가하고 나서도 Input 창에 입력한 단�
 
 ### ✔️실행방법
 
-![AutoComplete.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3782fc18-de9b-4953-b4c7-fc7d98aa9b8b/AutoComplete.gif)
+![AutoComplete](https://user-images.githubusercontent.com/81206124/153207491-05bcca33-cbbc-4018-becf-6eba51d8cb5f.gif)
 
 Input 창에 값을 입력하면 입력한 값과 유사한 단어들을 보여줍니다. 단어들 중 하나를 클릭하면 자동으로 검색어가 완성됩니다. x버튼을 눌러 검색창에 입력된 값을 삭제 할 수 있습니다.
 
@@ -123,7 +123,7 @@ Input 창에 값을 입력하면 입력한 값과 유사한 단어들을 보여�
 
 ### ✔️실행방법
 
-![ClickToEdit.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3816cf42-3ac8-44c7-85fb-287f38ab11c7/ClickToEdit.gif)
+![ClickToEdit](https://user-images.githubusercontent.com/81206124/153207510-71e3ea2c-b41b-412e-920f-10dbb0c20552.gif)
 
 Input 창에서 수정이 가능하고 Input 창이 아닌 곳을 클릭하면 수정한 내용이 반영됩니다.
 
