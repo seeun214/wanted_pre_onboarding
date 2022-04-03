@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Container } from './Toggle';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Container } from "./Toggle";
 
 const ModalBack = styled.div`
   position: fixed;
@@ -38,35 +38,43 @@ const ModalView = styled.div`
   height: 120px;
   border-radius: 1rem;
   position: relative;
-  >.close-btn{
+  .close-btn {
     position: absolute;
-    top:2px;
-    right:190px;
+    top: 2px;
+    right: 190px;
     cursor: pointer;
   }
 `;
 
 const Modal = () => {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
   const openModalHandler = (event) => {
     setIsOpen(!isOpen);
   };
 
   return (
     <Container>
-      <div className="title">
+      <div className='title'>
         <h3>Modal</h3>
       </div>
       <div className='inside-container'>
         <ModalBtn onClick={openModalHandler}>
-          {isOpen ? 'Opened' : 'Open Modal'} 
+          {isOpen ? "Opened" : "Open Modal"}
         </ModalBtn>
-        {isOpen ? <ModalBack onClick={openModalHandler}>
-                    <ModalView onClick={(event) => {event.stopPropagation()}}>
-                      <div className="close-btn" onClick={openModalHandler}>x</div>
-                      <div>HELLO CODESTATES!</div>
-                    </ModalView>
-                  </ModalBack> : null}
+        {isOpen ? (
+          <ModalBack onClick={openModalHandler}>
+            <ModalView
+              onClick={(event) => {
+                event.stopPropagation();
+              }}
+            >
+              <div className='close-btn' onClick={openModalHandler}>
+                x
+              </div>
+              <div>HELLO CODESTATES!</div>
+            </ModalView>
+          </ModalBack>
+        ) : null}
       </div>
     </Container>
   );

@@ -36,7 +36,7 @@ const TagsInput = styled.div`
         border-radius: 6px;
         margin: 4px 8px 8px 4px;
         background: #4000c7;
-        > .tag-close-icon {
+        .tag-close-icon {
           display: block;
           width: 16px;
           height: 16px;
