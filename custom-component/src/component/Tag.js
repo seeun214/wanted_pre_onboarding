@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Container } from './Toggle';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { Container } from "./Toggle";
 
 const TagsInput = styled.div`
   width: 800px;
@@ -9,21 +9,21 @@ const TagsInput = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  > .tag-container{
+
+  .tag-container {
     display: flex;
     flex-direction: row;
     width: 600px;
     border-radius: 10px;
     border: 1px solid #808080;
-    
-    > ul {
+
+    ul {
       display: flex;
       flex-wrap: wrap;
       padding: 0;
       margin: 8px 0 0 0;
 
-      > .tag {
+      .tag {
         width: auto;
         height: 32px;
         display: flex;
@@ -36,7 +36,7 @@ const TagsInput = styled.div`
         border-radius: 6px;
         margin: 4px 8px 8px 4px;
         background: #4000c7;
-          > .tag-close-icon {
+        > .tag-close-icon {
           display: block;
           width: 16px;
           height: 16px;
@@ -52,10 +52,10 @@ const TagsInput = styled.div`
       }
     }
 
-    > input {    
+    input {
       border: none;
       :focus {
-      outline: transparent;
+        outline: transparent;
       }
     }
 
@@ -66,30 +66,32 @@ const TagsInput = styled.div`
 `;
 
 const Tag = () => {
-  const initialTags = ['CodeStates', 'JJang'];
+  const initialTags = ["CodeStates", "JJang"];
 
   const [tags, setTags] = useState(initialTags);
 
   //* tag 삭제 기능
-  const deleteTags = (index) => { 
-    setTags(tags.filter((tag) =>{
-      return tag !== tags[index]
-    }));
+  const deleteTags = (index) => {
+    setTags(
+      tags.filter((tag) => {
+        return tag !== tags[index];
+      })
+    );
   };
-  
+
   //* tag 추가 기능
-  const addTags = (event) => { 
+  const addTags = (event) => {
     let word = event.target.value.trim();
     //단어가 빈값이거나 중복일 경우 실행되지 않음
-    if(word && !tags.includes(word) && event.key === 'Enter'){
+    if (word && !tags.includes(word) && event.key === "Enter") {
       setTags([...tags, word]);
-      event.target.value ="";
+      event.target.value = "";
     }
-  }
+  };
 
   return (
     <Container>
-      <div className="title">
+      <div className='title'>
         <h3>Tag</h3>
       </div>
       <TagsInput>
@@ -98,8 +100,11 @@ const Tag = () => {
             {tags.map((tag, index) => (
               <li key={index} className='tag'>
                 <span className='tag-content'>{tag}</span>
-                <span className='tag-close-icon' 
-                      onClick={() => deleteTags(index)}>x
+                <span
+                  className='tag-close-icon'
+                  onClick={() => deleteTags(index)}
+                >
+                  x
                 </span>
               </li>
             ))}
@@ -107,7 +112,9 @@ const Tag = () => {
           <input
             className='tag-input'
             type='text'
-            onKeyUp={(event) => {addTags(event)}}
+            onKeyUp={(event) => {
+              addTags(event);
+            }}
             placeholder='Press enter to add tags'
           />
         </div>
